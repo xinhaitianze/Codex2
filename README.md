@@ -33,8 +33,8 @@ variable:
     !用于实现一个简单的打印函数
 
     cbk print = "cprint(text)";
-        ^^^^^    ^^^^^^  ^^^^
-    !   函数名   执行语句|希望参数名
+        ^^^^^    ^^^^^^ ^^^^
+    !   函数名  执行语句|希望参数名
 
 //code.codex
 
@@ -45,4 +45,32 @@ variable:
     cbl text = "Hello,world";
     !执行print函数
     run(cbl['print']);
+
+**if语句**
+
+    input(>>>|,input);
+    cbl code = "cprint('hello!')\ncprint('I'm codex.')";
+    if(cbl['input'] == 'hello',code);
+
+以上代码解释:
+
+输入hello打印hello! I'm codex.
+
+**for语句**
+
+codex中的for 只用与有次数的运行代码
+
+    cbl hello_code = "cprint('hello world!!!')";
+    for(5,hello_code);
+
+**while语句**
+    cbl hello_code = "cprint('hello world!!!')";
+    while(True,hello_code);
+          ^^^^
+    !这里可以填条件,条件为True使执行
+
+例:
+
+    cbl hello_code = "cprint('hello world!!!')";
+    while(True,hello_code);
 
