@@ -64,6 +64,7 @@ codex中的for 只用与有次数的运行代码
     for(5,hello_code);
 
 **while语句**
+
     cbl hello_code = "cprint('hello world!!!')";
     while(True,hello_code);
           ^^^^
